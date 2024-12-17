@@ -51,7 +51,7 @@
         //     password: this.password,
         // });
         alert("Login Successful");
-        this.$router.push({ name: 'Register' })
+        this.$router.push({ name: 'ListExpenses' })
         } catch (error) {
         alert("Login failed");
         }

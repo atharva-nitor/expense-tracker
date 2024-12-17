@@ -14,8 +14,23 @@ public class Expense {
     private String title;
     @Column(nullable = false)
     private Double amount;
+
+    public Expense(String title, Double amount, String category, LocalDate date, User user) {
+        this.title = title;
+        this.amount = amount;
+        this.category = category;
+        this.date = date;
+        this.user = user;
+    }
+
     @Column(nullable = false)
     private String category;
+
+    public Expense(String groceries, double amount, String food, String date) {
+    }
+
+    public Expense() {
+    }
 
     public Long getId() {
         return id;
